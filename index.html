@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Puyo Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+  <canvas id="game"></canvas>
+
+  <div id="overlay">
+    <div id="gameover">GAME OVER</div>
+    <div id="pause">PAUSED</div>
+  </div>
+</div>
+
+<!-- ★ UI（スマホ対応・透過ボタン） -->
+<div id="ui">
+  <div class="score">SCORE: <span id="score">0</span></div>
+
+  <div class="buttons">
+    <button onclick="resetGame()">RESET</button>
+    <button onclick="togglePause()">PAUSE</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
